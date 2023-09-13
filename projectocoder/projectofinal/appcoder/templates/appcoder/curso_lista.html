@@ -1,0 +1,15 @@
+{% extends "appcoder/padre.html" %}
+
+
+{% block contenidoQueCambia %}
+<div style="font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4; max-width: 600px; margin: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+<h4 style="color: #b3cce9; border-bottom: 2px solid #4a90e2; padding-bottom: 10px;">Lista de cursos</h4>
+<div style="margin-top: 20px;">
+{% for curso in cursos %}
+    <h6 style="color: #ae3a3a; background-color: #eaf2ff; padding: 10px; border-radius: 5px; margin-bottom: 15px;">{{curso.curso}}</h6>
+{% endfor %}
+</div>
+</div>
+
+
+{% endblock %}
